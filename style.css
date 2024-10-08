@@ -10,6 +10,8 @@
 body {
     font-family: "Raleway", sans-serif;
     min-height: 100vh;
+    background-color: black;
+    color: white;
 }
 
 
@@ -18,37 +20,114 @@ body {
     height: 605px;
     display: grid;
     place-content: center;
-    background: linear-gradient(rgba(0, 0, 0, 60%), rgba(49, 168, 221, 0));
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url('./assets/images/banner.png');
+    background-size: cover;
+    border: 1px solid rgba(51, 168, 219, 1);
 }
 
 
 .banner-conteudo {
-    width: 510px;
-    height: 393px;
+    width: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 16px;
 }
 
-.banner-conteudo .logo img {
+.banner-conteudo .logo {
     width: 268px;
-    height: 268px;
+    height: auto;
 }
 
 .banner-conteudo h1 {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 900;
     color: transparent;
     background: linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
 }
 
 .banner-conteudo p {
-    font-weight: 400;
-    font-size: 20px;
-    text-align: center;
+    font-weight: 400;   
+    font-size: 1.20rem;
     width: 100%;
-    /* color: rgba(255, 255, 255, 1); */
+    color: rgba(255, 255, 255, 1);
+}
+
+
+.banner-conteudo button {
+    padding-inline: 91px;
+    padding-block: 19px;
+    height: 57px;
+    font-size: 1rem;
+    background-color: transparent;
+    color: rgba(49, 168, 221, 1);
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    border: 2px solid; 
+    border: linear-gradient(180deg, #3BA1CD 0%, #1572B7 100%);
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+main {
+    height: 100vh;
+}
+
+
+.sessao-aprender {
+    width: 100%;
+    height: 500px;
+    display: grid;
+    place-content: center;
+}
+
+.sessao-aprender .conteudo {
+    width: 792px;
+    display: grid;
+    gap: 24px;
+    text-align: center;
+}
+
+.conteudo h2 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: rgba(51, 168, 219, 1);
+    text-transform: uppercase;
+}
+
+.conteudo > p {
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    line-height: 19px;
+}
+
+.informacao {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.informacao .container {
+    width: 535px;
+    height: 51px;
+    background-color: #252525;
+    box-shadow: -2px 6px 4px 0px rgba(0, 0, 0, 0.4) inset;
+    border: 1px solid rgba(51, 168, 219, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+.container span {
+    color: rgba(51, 168, 219, 1);
+    font-weight: 400;
 }
