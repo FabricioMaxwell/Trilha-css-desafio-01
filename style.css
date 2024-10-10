@@ -22,7 +22,8 @@ body {
     place-content: center;
     background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url('./assets/images/banner.png');
     background-size: cover;
-    border: 1px solid rgba(51, 168, 219, 1);
+    border-top: 1px solid #33A8DB80;
+    border-bottom: 1px solid #33A8DB80;
 }
 
 
@@ -74,16 +75,18 @@ body {
     letter-spacing: 2px;
 }
 
-main {
-    height: 100vh;
-}
+
+
+/* Sessão aprender */
 
 
 .sessao-aprender {
     width: 100%;
-    height: 500px;
+    height: 560px;
     display: grid;
     place-content: center;
+    border-top: 1px solid #33A8DB80;
+    border-bottom: 1px solid #33A8DB80;
 }
 
 .sessao-aprender .conteudo {
@@ -107,7 +110,7 @@ main {
     line-height: 19px;
 }
 
-.informacao {
+.modulo {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -115,7 +118,7 @@ main {
     gap: 24px;
 }
 
-.informacao .container {
+.modulo div {
     width: 535px;
     height: 51px;
     background-color: #252525;
@@ -127,7 +130,33 @@ main {
     border-radius: 30px;
 }
 
-.container span {
+.modulo div span {
     color: rgba(51, 168, 219, 1);
     font-weight: 400;
+}
+
+/* Sessão transforme o mundo */
+
+
+.transforme-mundo {
+    height: 560px;
+    background: url('./assets/images/woman-code.png');
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    border-top: 1px solid #33A8DB80;
+    border-bottom: 1px solid #33A8DB80;
+    position: relative;
+}
+
+
+.transforme-mundo h3 {
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    font-size: 40px;
+    width: 280px;
+    font-weight: 900;
+    line-height: 47px;
+    text-transform: uppercase;
+    text-shadow: 3px 2px #33A8DB;
 }
