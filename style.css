@@ -7,13 +7,23 @@
     box-sizing: border-box;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
 body {
     font-family: "Raleway", sans-serif;
     min-height: 100vh;
     background-color: black;
     color: white;
+    width: 100vw;
+    height: 100vh;
 }
 
+
+/* Header */
 
 .banner {
     width: 100%;
@@ -85,18 +95,18 @@ body {
     height: 560px;
     display: grid;
     place-content: center;
-    border-top: 1px solid #33A8DB80;
     border-bottom: 1px solid #33A8DB80;
 }
 
 .sessao-aprender .conteudo {
     width: 792px;
+    height: 325px;
     display: grid;
     gap: 24px;
     text-align: center;
 }
 
-.conteudo h2 {
+.conteudo h3 {
     font-size: 32px;
     font-weight: 700;
     letter-spacing: 2px;
@@ -138,8 +148,9 @@ body {
 /* Sessão transforme o mundo */
 
 
-.transforme-mundo {
-    height: 560px;
+.sessao-transforme-mundo {
+    height: 360px;
+    width: 100%;
     background: url('./assets/images/woman-code.png');
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -149,9 +160,9 @@ body {
 }
 
 
-.transforme-mundo h3 {
+.sessao-transforme-mundo h3 {
     position: absolute;
-    top: 150px;
+    top: 100px;
     left: 100px;
     font-size: 40px;
     width: 280px;
@@ -159,4 +170,75 @@ body {
     line-height: 47px;
     text-transform: uppercase;
     text-shadow: 3px 2px #33A8DB;
+}
+
+/* sessão evolua */ 
+
+
+.sessao-evolua {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #33A8DB80;
+    padding: 100px;
+}
+
+
+.sessao-evolua div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.sessao-evolua h3 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 37.57px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    color: rgba(51,168,219,1);
+    text-align: center;
+    width: 880px;
+}
+
+
+.sessao-evolua img {
+    width: 659px;
+    height: 429px;
+}
+
+.sessao-evolua p {
+    line-height: 18.78px;
+    text-align: center;
+    width: 792px;
+}
+
+/* footer */
+
+.footer {
+    height: 170px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer img {
+    height: 44px;
+}
+
+
+.footer p {
+    font-weight: 400;
+}
+
+.footer span {
+    font-weight: 700;
+    color: rgba(51,168,219,1);
 }
