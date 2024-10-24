@@ -76,6 +76,7 @@ body {
 
 
 
+
 /* Sessão aprender */
 
 
@@ -126,7 +127,12 @@ body {
 }
 
 
-/* sessão transforme o miundo */
+.conteudo .modulo div span {
+    color: rgba(51, 168, 219, 1);
+}
+
+
+/* sessão transforme o mundo */
 
 
 .sessao-transforme-mundo {
@@ -137,4 +143,90 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+
+
+    display: flex;
+    align-items: center;
 }
+
+
+.sessao-transforme-mundo h2 {
+    margin-left: 3rem;
+    width: 15rem;
+    font-weight: 900;
+
+    color: white;
+    text-shadow: 3px 2px #33A8DB;
+
+}
+
+
+/* sessão evolua */
+
+
+.sessao-evolua {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5rem 2rem;
+    border-bottom: 1px solid #33A8DB80;
+    gap: 4rem;
+}
+
+.sessao-evolua h3 {
+    font-weight: 700;
+    color: rgba(51, 168, 219, 1);
+
+}
+
+.sessao-evolua p {
+    font-size: 1.28rem;
+    text-align: justify;
+}
+
+
+/* footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 17rem;
+}
+
+
+.footer p {
+    font-size: 1.28rem;
+}
+
+.footer span {
+    color: rgba(51, 168, 219, 1);
+}
+
+
+@media (min-width: 540px) {
+    .banner-conteudo h1 {
+        font-size: 4rem;
+    }
+
+    .banner-conteudo p {
+        font-size: 1.8rem;
+    }
+
+    .sessao-aprender .conteudo h2 {
+      font-size: 3rem;  
+    }
+
+    .sessao-aprender .conteudo > p {
+        font-size: 1.5rem;
+    }
+
+    .sessao-aprender .conteudo .modulo div {
+        font-size: 1.5rem;
+        padding-inline: 2rem;
+    }
+}
+
