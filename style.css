@@ -1,6 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 
+:root {
+    --padding-inline: 2rem;
+}
+
+@media (min-width: 601px) {
+    :root {
+        --padding-inline: 4rem;
+    }
+}
+
+@media (min-width: 901px) {
+    :root {
+        --padding-inline: 6rem;
+    }
+}
+
+
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -36,7 +54,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     border-bottom: 1px solid #33A8DB80;
-    padding: 2rem;
+    padding: var(--padding-inline);
 }
 
 .banner-conteudo {
@@ -85,7 +103,7 @@ body {
     height: 40rem;
     display: grid;
     place-content: center;
-    padding: 2rem;
+    padding: var(--padding-inline);
     border-bottom: 1px solid #33A8DB80;
 }
 
@@ -95,6 +113,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 2.3rem;
+    width: 100%;
 }
 
 .conteudo h2 {
@@ -170,9 +189,11 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 5rem 2rem;
+    padding-block: 5rem;
+    padding-inline: var(--padding-inline);
     border-bottom: 1px solid #33A8DB80;
     gap: 4rem;
+    width: 100%;
 }
 
 .sessao-evolua h3 {
@@ -207,26 +228,6 @@ body {
 }
 
 
-@media (min-width: 540px) {
-    .banner-conteudo h1 {
-        font-size: 4rem;
-    }
+@media (min-width: 601px) {
 
-    .banner-conteudo p {
-        font-size: 1.8rem;
-    }
-
-    .sessao-aprender .conteudo h2 {
-      font-size: 3rem;  
-    }
-
-    .sessao-aprender .conteudo > p {
-        font-size: 1.5rem;
-    }
-
-    .sessao-aprender .conteudo .modulo div {
-        font-size: 1.5rem;
-        padding-inline: 2rem;
-    }
 }
-
